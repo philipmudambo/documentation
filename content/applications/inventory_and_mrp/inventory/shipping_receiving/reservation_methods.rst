@@ -106,3 +106,4 @@ Operations Types`, and then clicking on a specific operations type.
    :titlesonly:
 
    reservation_methods/at_confirmation
+   reservation_methods/manually
