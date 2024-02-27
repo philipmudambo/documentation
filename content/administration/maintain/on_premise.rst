@@ -93,14 +93,11 @@ Solutions
 
 - **Add more users** to your subscription: follow the link and validate the upsell quotation and pay
   for the extra users.
-- **Deactivate users** as explained in this `documentation <documentation.html#deactivating-users>`_
+- **Deactivate users** as explained here :ref:`users/deactivate`
   and **reject** the upsell quotation.
 
 Once your database has the correct number of users, the expiration message
 will disappear automatically after a few days, when the next verification occurs.
-We understand that it can be a bit frightening to see the countdown,
-so you can :ref:`force an Update Notification <force_ping>`  to make the message disappear
-right away.
 
 Database expired error message
 ------------------------------
@@ -123,8 +120,6 @@ Solutions
   which can take a few days. Credit card payments are processed immediately.
 
 * Contact our `Support <https://www.odoo.com/help>`__
-
-.. _force_ping:
 
 .. _duplicate_premise:
 
