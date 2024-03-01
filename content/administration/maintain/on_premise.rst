@@ -34,8 +34,7 @@ Solutions
 * Have you already linked a database with your subscription code?
 
   * You can link only one database per subscription.
-    (Need a test or a development database? `Find a partner
-    <https://www.odoo.com/partners>`__)
+    (Need a test or a development database? :ref:`duplicate_premise`)
 
   * You can unlink the old database yourself on your `Odoo Contract
     <https://accounts.odoo.com/my/subscription>`__ with the button "Unlink database"
@@ -49,16 +48,16 @@ Solutions
     .. image:: on_premise/unlink_confirm_enterprise_edition.png
        :align: center
 
-* Sometimes, you may have multiple databases sharing the same
-    UUID. Please check on your `Odoo Contract
-    <https://accounts.odoo.com/my/subscription>`__, a short message will appear
-    specifying which database is problematic:
+* Sometimes, you may have multiple databases sharing the same UUID.
+
+        Please check on your `Odoo Contract <https://accounts.odoo.com/my/subscription>`__,
+        a short message will appear specifying which database is problematic:
 
     .. image:: on_premise/unlink_db_name_collision.png
        :align: center
 
     In this case, you need to change the UUID on your test databases to solve this
-    issue. You will find more information about this in :ref:`this section <duplicate_premise>`.
+    issue or contact our `Support <https://www.odoo.com/help>`__
 
     For your information, we identify each database with a UUID. Therefore, each
     database should have a distinct UUID to ensure that registration and invoicing
@@ -127,8 +126,11 @@ Duplicate a database
 ====================
 
 You can duplicate your database by accessing the database manager on your
-server (<odoo-server>/web/database/manager). On this page, you can
-duplicate your database (among other things).
+server (<odoo-server>/web/database/manager). On this page, you can duplicate your
+database (among other things). Typically you will want to duplicate your
+production database into a neutralized testing database. This can be done by
+checking the neutralize box when prompted. This will execute all the neutralize.sql
+scripts for every installed module.
 
-.. image:: on_premise/db_manager.gif
-   :align: center
+.. image:: on_premise/duplicate_database.png
+  :align: center
