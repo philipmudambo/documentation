@@ -22,3 +22,4 @@ activities with meetings and next activities.
    crm/track_leads
    crm/performance
    crm/optimize
+   crm/mail_plugins
