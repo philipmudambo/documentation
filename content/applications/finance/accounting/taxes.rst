@@ -307,6 +307,31 @@ directly to a product line.
    .. image:: taxes/list-sequence.png
       :alt: The taxes' sequence in Odoo determines which tax is applied first
 
+Extra taxes
+===========
+
+"Extra taxes" is a broad term referring to additional taxes beyond the standard or basic taxes
+imposed by governments. These extra taxes can be **luxury** taxes, **environmental** taxes,
+**import** or **export duties** taxes, etc.
+
+.. note::
+   The way luxury taxes, environmental taxes, etc., are computed varies from country to country,
+   check your country's regulations to know how to compute them for your business.
+
+In Belgium, the formula to compute an environmental tax is: `(product price + ecotax) x sales tax`.
+Therefore, our ecotax has to come *before* the sales tax in the computation sequence.
+
+To do so, :ref:`create a tax <taxes/configuration>`, enter a tax name, select a
+:ref:`Tax Computation <taxes/configuration>`, set an :guilabel:`Amount`, and in the
+:guilabel:`Advanced Options` tab, check :guilabel:`Affect Base of Subsequent Taxes`. Once created,
+order the tax according to the computation order of your country.
+
+.. example::
+   In our case, we created a 5% ecotax and put it *before* the Belgian base tax of 21%.
+
+   .. image:: taxes/ecotax.png
+      :alt: Ecotax sequence in Belgium.
+
 .. seealso::
   - :doc:`taxes/fiscal_positions`
   - :doc:`taxes/B2B_B2C`
