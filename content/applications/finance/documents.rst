@@ -62,6 +62,17 @@ Tags can be created from the :guilabel:`Tags` tab. Click :guilabel:`Add a line`,
    - Tags can be created and modified by going to :menuselection:`Configuration --> Tags`;
    - Tags can also be created or edited by clicking the gear icon :guilabel:`⚙` on the left menu.
 
+An **email alias** can be used to automatically send received documents to a specific workspace
+based on the tag assigned. To create an email alias:
+
+#. Select the tag and the corresponding workspace where the document should be directed in the left
+   column of your dashboard.
+
+#. Next to the :guilabel:`Upload` button, click the down arrow, and then click :guilabel:`Share`.
+
+#. In the new window, click :guilabel:`Download and Upload` and enter the email alias where
+   documents should be sent.
+
 Access rights
 -------------
 
@@ -89,17 +100,16 @@ Documents management
 
 When selecting or opening a document, the right panel displays different options. On the top,
 additional options might be available: :guilabel:`Download`, :guilabel:`Share`, :guilabel:`Replace`,
-:guilabel:`Lock` or :guilabel:`Split`. It is also possible to :guilabel:`Open chatter` or
-:guilabel:`Archive` the document.
+:guilabel:`Lock` or :guilabel:`Split`. It is also possible to :guilabel:`Open chatter` or use the
+:guilabel:`Move to trash` option.
 
 .. image:: documents/right-panel-options.png
    :align: center
    :alt: right panel options
 
-Then, you can modify the name of your file by clicking on :guilabel:`Document`. A
-:guilabel:`Contact` or an :guilabel:`Owner` can be assigned. The related :guilabel:`Workspace` can
-be modified and it is possible to access the related :guilabel:`Journal Entry` or add
-:guilabel:`Tags`.
+Then, you can modify the name of your file by clicking on :guilabel:`Name`. A :guilabel:`Contact` or
+an :guilabel:`Owner` can be assigned. The related :guilabel:`Workspace` can be modified and it is
+possible to access the related :guilabel:`Journal Entry` or add :guilabel:`Tags`.
 
 .. note::
    - The :guilabel:`Contact` is the person related to the document and assigned to it. He can only
